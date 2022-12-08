@@ -1,22 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Anek Devanagari', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     box-sizing: border-box;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: min(1fr, 200px) 4fr;
+    min-height: 100vh;
 }
 
-.header {
+.right_side {
     grid-column-start: 2;
+}
+
+/* Header layout */
+.header {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    background-color: aqua;
     padding: 20px 40px;
     gap: 30px;
+    background-color: #4980f751;
 }
 
 .search_bar {
@@ -54,10 +59,10 @@ input {
 }
 
 .user {
-    font-weight: bolder;
+    font-weight: 600;
 }
 
-.welcome_user .profile_pic{
+.welcome_user .profile_pic {
     height: 4.5rem;
     width: 4.5rem;
 }
@@ -72,25 +77,13 @@ input {
 
 .header_buttons button {
     border-radius: 30px;
-    padding: 3px;
-    font-size: 1.25rem;
-    font-weight: bolder;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
     border: none;
-    width: 100px;
-    
-}
-
-.sidebar {
-    grid-row-end: span 2;
-}
-
-.main_content {
-    grid-column-start: 2;
-    grid-row-end: span 2;
-}
-
-.footer {
-    grid-column: 1 / -1;
+    width: 110px;
+    background-color: #6366f1;
+    color: #e2e8f0;
 }
 
 .icon {
@@ -105,5 +98,76 @@ input {
     height: 3rem;
     width: 3rem;
     padding: 2px;
-    background-color: azure;
+    background-color: #8da6dc;
+}
+
+/* Sidebar layout */
+.sidebar {
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 2fr;
+    padding: 25px;
+    background-color: #6366f1;
+    color: #e2e8f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo_icon {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav_icon {
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation,.navigation_additional {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 15px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.navigation_additional {
+    align-self: center;
+}
+
+.github_sidebar {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+
+.github_sidebar img {
+    width: 4rem;
+}
+
+/* Main content layout */
+.main_content {
+    background-color: #4980f718;
+}
+
+/* footer layout */
+.footer {
+    font-size: 0.8rem;
+    background-color: #4980f718;
 }

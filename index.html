@@ -7,87 +7,115 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap" rel="stylesheet">
-    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Projects Dashboard</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="search_bar">
-                <img src="./Images/magnify.svg" alt="search icon" class="icon">
-                <input type="search" name="search" id="search">
-            </div>
-            <div class="user_info">
-                <div class="notification_icon">
-                    <img class="icon" src="./Images/bell-ring-outline.svg" alt="notification icon">
+        <div class="right_side">
+            <div class="header">
+                <div class="search_bar">
+                    <img src="./Images/magnify.svg" alt="search icon" class="icon">
+                    <input type="search" name="search" id="search" placeholder="Search...">
                 </div>
-                <img src="./Images/pusheen.png" alt="Profile picture" class="profile_pic">
-                <div class="user">Sheng-Yau Lim</div>
-            </div>
-            <div class="welcome_user">
-                <div class="profile_pic">
+                <div class="user_info">
+                    <div class="notification_icon">
+                        <img class="icon" src="./Images/bell-ring-outline.svg" alt="notification icon">
+                    </div>
                     <img src="./Images/pusheen.png" alt="Profile picture" class="profile_pic">
+                    <div class="user">Sheng-Yau Lim</div>
                 </div>
-                <div class="welcome_user_text">
-                    <div>Hi there,</div>
-                    <div class="user">Sheng-Yau Lim (@syl1m)</div>
+                <div class="welcome_user">
+                    <div class="profile_pic">
+                        <img src="./Images/pusheen.png" alt="Profile picture" class="profile_pic">
+                    </div>
+                    <div class="welcome_user_text">
+                        <div>Hi there,</div>
+                        <div class="user">Sheng-Yau Lim (@syl1m)</div>
+                    </div>
+                </div>
+                <div class="header_buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
                 </div>
             </div>
-            <div class="header_buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="main_content">
+                <div class="title">My Projects</div>
+                <div class="title">Announcements</div>
+                <div class="title">Trending</div>
             </div>
+            <div class="footer">Created by Sheng-Yau Lim for The Odin Project</div>
         </div>
         <div class="sidebar">
-            <div class="logo"></div>
+            <div class="logo">
+                <div class="logo_icon">
+                    <img src="./Images/leaf-circle-outline.svg" alt="leaf icon">
+                </div>
+                <div>Dashboard</div>
+            </div>
             <div class="navigation">
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/home.svg" alt="home icon">
+                    </div>
                     <div class="text">Home</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/profile-outline.svg" alt="profile icon">
+                    </div>
                     <div class="text">Profile</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/messages.svg" alt="messages icon">
+                    </div>
                     <div class="text">Messages</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/history.svg" alt="history icon">
+                    </div>
                     <div class="text">History</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
-                    <div class="text">Tasks</div>
+                    <div class="nav_icon">
+                        <img src="./Images/events.svg" alt="events icon">
+                    </div>
+                    <div class="text">Events</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/community.svg" alt="communities icon">
+                    </div>
                     <div class="text">Communities</div>
                 </div>
             </div>
             <div class="navigation_additional">
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/settings.svg" alt="settings icon">
+                    </div>
                     <div class="text">Settings</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/support.svg" alt="support icon">
+                    </div>
                     <div class="text">Support</div>
                 </div>
                 <div class="nav_item">
-                    <div class="nav_icon"></div>
+                    <div class="nav_icon">
+                        <img src="./Images/privacy.svg" alt="privacy icon">
+                    </div>
                     <div class="text">Privacy</div>
                 </div>
             </div>
+            <div class="github_sidebar">
+                <a href="https://github.com/syl1m"><img src="./Images/github.svg" alt="github logo"></a>
+            </div>
         </div>
-        <div class="main_content">
-            <div class="title">Your Projects</div>
-            <div class="title">Announcements</div>
-            <div class="title">Trending</div>
-        </div>
-        <div class="footer">Copyright © syl1m 2022</div>
     </div>
 </body>
 </html>
