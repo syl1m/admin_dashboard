@@ -253,7 +253,6 @@ input {
     overflow: auto;
     height: 315px;
     padding: 15px;
-    gap: 10px;
     border-radius: 10px;
     background-color: #bfdbfe;
 }
@@ -263,19 +262,42 @@ input {
     overflow: hidden;
     gap: 5px;
     border-bottom: 1px solid #6d28d9;
+    padding: 10px;
 }
 
-.last {
-    border: none;
-}
-
-.announcement_title {
+.announcement_title, .trending_text {
     font-weight: 700;
     font-size: 0.9rem;
 }
 
 .announcement_text {
     font-size: 0.75rem;
+}
+
+.trending_content {
+    grid-auto-rows: 75px;
+}
+
+.trending_item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #6d28d9;
+}
+
+.trending_item img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.trending_project {
+    font-weight: normal;
+}
+
+.last {
+    border: none;
 }
 
 /* footer layout */
