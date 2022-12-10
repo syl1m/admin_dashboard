@@ -87,6 +87,7 @@ input {
     width: 90px;
     background-color: #6366f1;
     color: #e2e8f0;
+    transition-duration: 0.2s;
 }
 
 .icon {
@@ -137,6 +138,7 @@ input {
     gap: 20px;
     font-size: 1rem;
     font-weight: 500;
+    transition-duration: 0.2s;
 }
 
 .nav_icon {
@@ -165,6 +167,8 @@ input {
 
 .github_sidebar img {
     width: 4rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 /* Main content layout */
@@ -218,6 +222,8 @@ input {
 
 .project_links img {
     width: 2rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .project_name {
@@ -308,4 +314,27 @@ input {
     justify-content: center;
     align-self: center;
     padding: 15px;
+}
+
+/* Hover effects */
+.nav_item:hover {
+    transform: scale(1.15);
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.5rem #c026d3);
+}
+
+a:visited {
+    color: inherit;
+}
+
+.github_sidebar img:hover,
+.project_links img:hover {
+    transform: rotate(360deg) scale(1.5);
+    filter: drop-shadow(0 0 1rem #c026d3);
+}
+
+button:hover {
+    filter: drop-shadow(0 0 0.3rem #6366f1);
+    background-color: #e2e8f0;
+    color: #6366f1;
 }
