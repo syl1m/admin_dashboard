@@ -338,3 +338,10 @@ button:hover {
     background-color: #e2e8f0;
     color: #6366f1;
 }
+
+/* Add box shadow effect */
+.project,
+.announcements_content,
+.trending_content {
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.19);
+}
